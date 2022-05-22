@@ -1,0 +1,48 @@
+.competencesicons {
+  font-size: 30px;
+  margin-top: 30px;
+}
+
+.competencestitles {
+  font-size: 27px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.squareicons {
+  font-size: 13px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.competencesparagraph {
+  font-size: 13px;
+  max-width: 280px;
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .competencesboxes:hover {
+    transform: translateY(-20px);
+  }
+}
+
+.competencesboxes {
+  display: inline-block;
+  vertical-align: middle;
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transition-timing-function: ease-out;
+  border: 1px gray solid;
+}
+
+@media (max-width: 991px) {
+  .competencestitles {
+    font-size: 22px;
+    margin: 30px 0 30px 0;
+  }
+}
+
+
