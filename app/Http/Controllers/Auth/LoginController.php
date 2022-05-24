@@ -6,23 +6,34 @@ use App\Http\Controllers\Controller;
 use App\Services\Data\SecurityDao;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 
 class LoginController extends Controller
 {
     /**
      * Handle an authentication attempt.
      *
-     * @param  \Illuminate\Http\Request $request
-     *
-     * @return Response
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     * @return mixed
      */
     public function authenticate(Request $request)
     {
 
-        $credentials = $request->only('username', 'password');
-        $DAO = new SecurityDao();
-        if ($DAO->login($credentials)) {
-            return redirect()->intended('home'); }
+        $credentials = $request->validate([
+            'username' => ['required'],
+            'password' => ['required'],
+        ]);
+
+        if (Auth::attempt($credentials)) {
+            $request->session()->regenerate();
+            $DAO = new SecurityDao();
+
+            return redirect()->intended('home');
+        }
+        return back()->withErrors([
+            'email' => 'The provided credentials do not match our records.',
+        ])->onlyInput('email');
 
     }
     public function logout(Request $request)

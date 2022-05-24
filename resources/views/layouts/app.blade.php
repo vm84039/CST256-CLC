@@ -7,15 +7,21 @@
         </title>
     </head>
     <body>
-        <header>
-            @include('includes.header');
-        </header>
-        <main class="py-4">
+    <div id="wrapper">
+        @include('includes.header');
+        <div id="content">
+            @include('includes.sidebar')
             @yield('content')
-        </main>
-        <footer class="page-footer dark">
+        </div>
+
+        <br>
+        <div class="push"></div>
+    </div>
+    <div id="footer">
+        <div id="footer-content ">
             @include('includes.footer')
-        </footer>
+        </div>>
+    </div>
         @include('includes.scripts');
     </body>
 </html>

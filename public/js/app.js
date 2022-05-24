@@ -982,7 +982,7 @@ eval("\n\nvar bind = __webpack_require__(/*! ./helpers/bind */ \"./node_modules/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var alpinejs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! alpinejs */ \"./node_modules/alpinejs/dist/module.esm.js\");\n__webpack_require__(/*! ./bootstrap */ \"./resources/js/bootstrap.js\");\n\n\nwindow.Alpine = alpinejs__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\nalpinejs__WEBPACK_IMPORTED_MODULE_0__[\"default\"].start();//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvanMvYXBwLmpzLmpzIiwibWFwcGluZ3MiOiI7O0FBQUFBLG1CQUFPLENBQUMsZ0RBQUQsQ0FBUDs7QUFFQTtBQUVBRSxNQUFNLENBQUNELE1BQVAsR0FBZ0JBLGdEQUFoQjtBQUVBQSxzREFBQSIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3Jlc291cmNlcy9qcy9hcHAuanM/Y2VkNiJdLCJzb3VyY2VzQ29udGVudCI6WyJyZXF1aXJlKCcuL2Jvb3RzdHJhcCcpO1xuXG5pbXBvcnQgQWxwaW5lIGZyb20gJ2FscGluZWpzJztcblxud2luZG93LkFscGluZSA9IEFscGluZTtcblxuQWxwaW5lLnN0YXJ0KCk7XG4iXSwibmFtZXMiOlsicmVxdWlyZSIsIkFscGluZSIsIndpbmRvdyIsInN0YXJ0Il0sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/js/app.js\n");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var alpinejs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! alpinejs */ \"./node_modules/alpinejs/dist/module.esm.js\");\n__webpack_require__(/*! ./bootstrap */ \"./resources/js/bootstrap.js\");\n\n\nwindow.Alpine = alpinejs__WEBPACK_IMPORTED_MODULE_0__[\"default\"];\nalpinejs__WEBPACK_IMPORTED_MODULE_0__[\"default\"].start(); // resources/assets/js/app.js\n\n$('.datepicker').datepicker(); // e.g <input type=\"text\" class=\"datepicker\" />\n\n/* PHONE DATA-API\n * ============== */\n\n$(window).on('load', function () {\n  $('form input[type=\"text\"].bfh-phone, form input[type=\"tel\"].bfh-phone, span.bfh-phone').each(function () {\n    var $phone = $(this);\n    if ($phone.val() != \"\") $phone.data(\"number\", $phone.val());\n    $phone.bfhphone($phone.data());\n  });\n});//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvanMvYXBwLmpzLmpzIiwibWFwcGluZ3MiOiI7O0FBQUFBLG1CQUFPLENBQUMsZ0RBQUQsQ0FBUDs7QUFFQTtBQUVBRSxNQUFNLENBQUNELE1BQVAsR0FBZ0JBLGdEQUFoQjtBQUVBQSxzREFBQSxJQUVBOztBQUNDRyxDQUFDLENBQUMsYUFBRCxDQUFELENBQWlCQyxVQUFqQixJQUVBOztBQUVEO0FBQ0E7O0FBRUFELENBQUMsQ0FBQ0YsTUFBRCxDQUFELENBQVVJLEVBQVYsQ0FBYSxNQUFiLEVBQXFCLFlBQVk7RUFDN0JGLENBQUMsQ0FBQyxxRkFBRCxDQUFELENBQXlGRyxJQUF6RixDQUE4RixZQUFZO0lBQ3RHLElBQUlDLE1BQU0sR0FBR0osQ0FBQyxDQUFDLElBQUQsQ0FBZDtJQUNBLElBQUlJLE1BQU0sQ0FBQ0MsR0FBUCxNQUFnQixFQUFwQixFQUF3QkQsTUFBTSxDQUFDRSxJQUFQLENBQVksUUFBWixFQUFzQkYsTUFBTSxDQUFDQyxHQUFQLEVBQXRCO0lBQ3hCRCxNQUFNLENBQUNHLFFBQVAsQ0FBZ0JILE1BQU0sQ0FBQ0UsSUFBUCxFQUFoQjtFQUNILENBSkQ7QUFLSCxDQU5EIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcmVzb3VyY2VzL2pzL2FwcC5qcz9jZWQ2Il0sInNvdXJjZXNDb250ZW50IjpbInJlcXVpcmUoJy4vYm9vdHN0cmFwJyk7XG5cbmltcG9ydCBBbHBpbmUgZnJvbSAnYWxwaW5lanMnO1xuXG53aW5kb3cuQWxwaW5lID0gQWxwaW5lO1xuXG5BbHBpbmUuc3RhcnQoKTtcblxuLy8gcmVzb3VyY2VzL2Fzc2V0cy9qcy9hcHAuanNcbiAkKCcuZGF0ZXBpY2tlcicpLmRhdGVwaWNrZXIoKTtcblxuIC8vIGUuZyA8aW5wdXQgdHlwZT1cInRleHRcIiBjbGFzcz1cImRhdGVwaWNrZXJcIiAvPlxuXG4vKiBQSE9ORSBEQVRBLUFQSVxuICogPT09PT09PT09PT09PT0gKi9cblxuJCh3aW5kb3cpLm9uKCdsb2FkJywgZnVuY3Rpb24gKCkge1xuICAgICQoJ2Zvcm0gaW5wdXRbdHlwZT1cInRleHRcIl0uYmZoLXBob25lLCBmb3JtIGlucHV0W3R5cGU9XCJ0ZWxcIl0uYmZoLXBob25lLCBzcGFuLmJmaC1waG9uZScpLmVhY2goZnVuY3Rpb24gKCkge1xuICAgICAgICB2YXIgJHBob25lID0gJCh0aGlzKVxuICAgICAgICBpZiAoJHBob25lLnZhbCgpICE9IFwiXCIpICRwaG9uZS5kYXRhKFwibnVtYmVyXCIsICRwaG9uZS52YWwoKSlcbiAgICAgICAgJHBob25lLmJmaHBob25lKCRwaG9uZS5kYXRhKCkpXG4gICAgfSlcbn0pXG4iXSwibmFtZXMiOlsicmVxdWlyZSIsIkFscGluZSIsIndpbmRvdyIsInN0YXJ0IiwiJCIsImRhdGVwaWNrZXIiLCJvbiIsImVhY2giLCIkcGhvbmUiLCJ2YWwiLCJkYXRhIiwiYmZocGhvbmUiXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/js/app.js\n");
 
 /***/ }),
 
@@ -1050,6 +1050,17 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 
 /***/ }),
 
+/***/ "./resources/css/bootstrap-formhelpers.css":
+/*!*************************************************!*\
+  !*** ./resources/css/bootstrap-formhelpers.css ***!
+  \*************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvY3NzL2Jvb3RzdHJhcC1mb3JtaGVscGVycy5jc3MuanMiLCJtYXBwaW5ncyI6IjtBQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcmVzb3VyY2VzL2Nzcy9ib290c3RyYXAtZm9ybWhlbHBlcnMuY3NzP2VjNDUiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5leHBvcnQge307Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/css/bootstrap-formhelpers.css\n");
+
+/***/ }),
+
 /***/ "./resources/css/slidenavbarstyle.css":
 /*!********************************************!*\
   !*** ./resources/css/slidenavbarstyle.css ***!
@@ -1057,7 +1068,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvY3NzL3NsaWRlbmF2YmFyc3R5bGUuY3NzLmpzIiwibWFwcGluZ3MiOiI7QUFBQSIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3Jlc291cmNlcy9jc3Mvc2xpZGVuYXZiYXJzdHlsZS5jc3M/ODgzMyJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBleHRyYWN0ZWQgYnkgbWluaS1jc3MtZXh0cmFjdC1wbHVnaW5cbmV4cG9ydCB7fTsiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/css/slidenavbarstyle.css\n");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvY3NzL3NsaWRlbmF2YmFyc3R5bGUuY3NzLmpzIiwibWFwcGluZ3MiOiI7QUFBQSIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3Jlc291cmNlcy9jc3Mvc2xpZGVuYXZiYXJzdHlsZS5jc3M/YTU2NSJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBleHRyYWN0ZWQgYnkgbWluaS1jc3MtZXh0cmFjdC1wbHVnaW5cbmV4cG9ydCB7fTsiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/css/slidenavbarstyle.css\n");
 
 /***/ }),
 
@@ -1068,7 +1079,62 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvY3NzL2N1c3RvbS5jc3MuanMiLCJtYXBwaW5ncyI6IjtBQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcmVzb3VyY2VzL2Nzcy9jdXN0b20uY3NzPzhlYmQiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5leHBvcnQge307Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/css/custom.css\n");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvY3NzL2N1c3RvbS5jc3MuanMiLCJtYXBwaW5ncyI6IjtBQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcmVzb3VyY2VzL2Nzcy9jdXN0b20uY3NzP2VhMzMiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5leHBvcnQge307Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/css/custom.css\n");
+
+/***/ }),
+
+/***/ "./resources/css/styles.css":
+/*!**********************************!*\
+  !*** ./resources/css/styles.css ***!
+  \**********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvY3NzL3N0eWxlcy5jc3MuanMiLCJtYXBwaW5ncyI6IjtBQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcmVzb3VyY2VzL2Nzcy9zdHlsZXMuY3NzP2MwNGYiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5leHBvcnQge307Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/css/styles.css\n");
+
+/***/ }),
+
+/***/ "./resources/css/Ludens-Users---25-After-Register.css":
+/*!************************************************************!*\
+  !*** ./resources/css/Ludens-Users---25-After-Register.css ***!
+  \************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvY3NzL0x1ZGVucy1Vc2Vycy0tLTI1LUFmdGVyLVJlZ2lzdGVyLmNzcy5qcyIsIm1hcHBpbmdzIjoiO0FBQUEiLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8vLi9yZXNvdXJjZXMvY3NzL0x1ZGVucy1Vc2Vycy0tLTI1LUFmdGVyLVJlZ2lzdGVyLmNzcz8xOGU3Il0sInNvdXJjZXNDb250ZW50IjpbIi8vIGV4dHJhY3RlZCBieSBtaW5pLWNzcy1leHRyYWN0LXBsdWdpblxuZXhwb3J0IHt9OyJdLCJuYW1lcyI6W10sInNvdXJjZVJvb3QiOiIifQ==\n//# sourceURL=webpack-internal:///./resources/css/Ludens-Users---25-After-Register.css\n");
+
+/***/ }),
+
+/***/ "./resources/css/Pretty-Registration-Form.css":
+/*!****************************************************!*\
+  !*** ./resources/css/Pretty-Registration-Form.css ***!
+  \****************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvY3NzL1ByZXR0eS1SZWdpc3RyYXRpb24tRm9ybS5jc3MuanMiLCJtYXBwaW5ncyI6IjtBQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcmVzb3VyY2VzL2Nzcy9QcmV0dHktUmVnaXN0cmF0aW9uLUZvcm0uY3NzPzA4YTMiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5leHBvcnQge307Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/css/Pretty-Registration-Form.css\n");
+
+/***/ }),
+
+/***/ "./resources/css/sidebar.css":
+/*!***********************************!*\
+  !*** ./resources/css/sidebar.css ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvY3NzL3NpZGViYXIuY3NzLmpzIiwibWFwcGluZ3MiOiI7QUFBQSIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL3Jlc291cmNlcy9jc3Mvc2lkZWJhci5jc3M/ZmNjNCJdLCJzb3VyY2VzQ29udGVudCI6WyIvLyBleHRyYWN0ZWQgYnkgbWluaS1jc3MtZXh0cmFjdC1wbHVnaW5cbmV4cG9ydCB7fTsiXSwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///./resources/css/sidebar.css\n");
+
+/***/ }),
+
+/***/ "./resources/css/sidebar-1.css":
+/*!*************************************!*\
+  !*** ./resources/css/sidebar-1.css ***!
+  \*************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiLi9yZXNvdXJjZXMvY3NzL3NpZGViYXItMS5jc3MuanMiLCJtYXBwaW5ncyI6IjtBQUFBIiwic291cmNlcyI6WyJ3ZWJwYWNrOi8vLy4vcmVzb3VyY2VzL2Nzcy9zaWRlYmFyLTEuY3NzP2NjMDUiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gZXh0cmFjdGVkIGJ5IG1pbmktY3NzLWV4dHJhY3QtcGx1Z2luXG5leHBvcnQge307Il0sIm5hbWVzIjpbXSwic291cmNlUm9vdCI6IiJ9\n//# sourceURL=webpack-internal:///./resources/css/sidebar-1.css\n");
 
 /***/ }),
 
@@ -1264,8 +1330,14 @@ eval("// shim for using process in browser\nvar process = module.exports = {};\n
 /******/ 			"js/Competences-Grid---3-Columns---Hover-Effect-Float-Up": 0,
 /******/ 			"css/Black-Navbar": 0,
 /******/ 			"css/Table-With-Search": 0,
+/******/ 			"css/sidebar-1": 0,
+/******/ 			"css/sidebar": 0,
+/******/ 			"css/Pretty-Registration-Form": 0,
+/******/ 			"css/Ludens-Users---25-After-Register": 0,
+/******/ 			"css/styles": 0,
 /******/ 			"css/custom": 0,
 /******/ 			"css/slidenavbarstyle": 0,
+/******/ 			"css/bootstrap-formhelpers": 0,
 /******/ 			"css/Bootstrap-DataTables": 0,
 /******/ 			"css/Table-With-Search-1": 0,
 /******/ 			"css/Navbar-With-Button": 0
@@ -1318,17 +1390,23 @@ eval("// shim for using process in browser\nvar process = module.exports = {};\n
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["css/app","js/Competences-Grid---3-Columns---Hover-Effect-Float-Up","css/Black-Navbar","css/Table-With-Search","css/custom","css/slidenavbarstyle","css/Bootstrap-DataTables","css/Table-With-Search-1","css/Navbar-With-Button"], () => (__webpack_require__("./resources/js/app.js")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","js/Competences-Grid---3-Columns---Hover-Effect-Float-Up","css/Black-Navbar","css/Table-With-Search","css/custom","css/slidenavbarstyle","css/Bootstrap-DataTables","css/Table-With-Search-1","css/Navbar-With-Button"], () => (__webpack_require__("./resources/sass/app.scss")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","js/Competences-Grid---3-Columns---Hover-Effect-Float-Up","css/Black-Navbar","css/Table-With-Search","css/custom","css/slidenavbarstyle","css/Bootstrap-DataTables","css/Table-With-Search-1","css/Navbar-With-Button"], () => (__webpack_require__("./resources/css/app.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","js/Competences-Grid---3-Columns---Hover-Effect-Float-Up","css/Black-Navbar","css/Table-With-Search","css/custom","css/slidenavbarstyle","css/Bootstrap-DataTables","css/Table-With-Search-1","css/Navbar-With-Button"], () => (__webpack_require__("./resources/css/Table-With-Search.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","js/Competences-Grid---3-Columns---Hover-Effect-Float-Up","css/Black-Navbar","css/Table-With-Search","css/custom","css/slidenavbarstyle","css/Bootstrap-DataTables","css/Table-With-Search-1","css/Navbar-With-Button"], () => (__webpack_require__("./resources/css/Black-Navbar.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","js/Competences-Grid---3-Columns---Hover-Effect-Float-Up","css/Black-Navbar","css/Table-With-Search","css/custom","css/slidenavbarstyle","css/Bootstrap-DataTables","css/Table-With-Search-1","css/Navbar-With-Button"], () => (__webpack_require__("./resources/css/Competences-Grid---3-Columns---Hover-Effect-Float-Up.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","js/Competences-Grid---3-Columns---Hover-Effect-Float-Up","css/Black-Navbar","css/Table-With-Search","css/custom","css/slidenavbarstyle","css/Bootstrap-DataTables","css/Table-With-Search-1","css/Navbar-With-Button"], () => (__webpack_require__("./resources/css/Navbar-With-Button.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","js/Competences-Grid---3-Columns---Hover-Effect-Float-Up","css/Black-Navbar","css/Table-With-Search","css/custom","css/slidenavbarstyle","css/Bootstrap-DataTables","css/Table-With-Search-1","css/Navbar-With-Button"], () => (__webpack_require__("./resources/css/Table-With-Search-1.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","js/Competences-Grid---3-Columns---Hover-Effect-Float-Up","css/Black-Navbar","css/Table-With-Search","css/custom","css/slidenavbarstyle","css/Bootstrap-DataTables","css/Table-With-Search-1","css/Navbar-With-Button"], () => (__webpack_require__("./resources/css/Bootstrap-DataTables.css")))
-/******/ 	__webpack_require__.O(undefined, ["css/app","js/Competences-Grid---3-Columns---Hover-Effect-Float-Up","css/Black-Navbar","css/Table-With-Search","css/custom","css/slidenavbarstyle","css/Bootstrap-DataTables","css/Table-With-Search-1","css/Navbar-With-Button"], () => (__webpack_require__("./resources/css/slidenavbarstyle.css")))
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app","js/Competences-Grid---3-Columns---Hover-Effect-Float-Up","css/Black-Navbar","css/Table-With-Search","css/custom","css/slidenavbarstyle","css/Bootstrap-DataTables","css/Table-With-Search-1","css/Navbar-With-Button"], () => (__webpack_require__("./resources/css/custom.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","js/Competences-Grid---3-Columns---Hover-Effect-Float-Up","css/Black-Navbar","css/Table-With-Search","css/sidebar-1","css/sidebar","css/Pretty-Registration-Form","css/Ludens-Users---25-After-Register","css/styles","css/custom","css/slidenavbarstyle","css/bootstrap-formhelpers","css/Bootstrap-DataTables","css/Table-With-Search-1","css/Navbar-With-Button"], () => (__webpack_require__("./resources/js/app.js")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","js/Competences-Grid---3-Columns---Hover-Effect-Float-Up","css/Black-Navbar","css/Table-With-Search","css/sidebar-1","css/sidebar","css/Pretty-Registration-Form","css/Ludens-Users---25-After-Register","css/styles","css/custom","css/slidenavbarstyle","css/bootstrap-formhelpers","css/Bootstrap-DataTables","css/Table-With-Search-1","css/Navbar-With-Button"], () => (__webpack_require__("./resources/sass/app.scss")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","js/Competences-Grid---3-Columns---Hover-Effect-Float-Up","css/Black-Navbar","css/Table-With-Search","css/sidebar-1","css/sidebar","css/Pretty-Registration-Form","css/Ludens-Users---25-After-Register","css/styles","css/custom","css/slidenavbarstyle","css/bootstrap-formhelpers","css/Bootstrap-DataTables","css/Table-With-Search-1","css/Navbar-With-Button"], () => (__webpack_require__("./resources/css/app.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","js/Competences-Grid---3-Columns---Hover-Effect-Float-Up","css/Black-Navbar","css/Table-With-Search","css/sidebar-1","css/sidebar","css/Pretty-Registration-Form","css/Ludens-Users---25-After-Register","css/styles","css/custom","css/slidenavbarstyle","css/bootstrap-formhelpers","css/Bootstrap-DataTables","css/Table-With-Search-1","css/Navbar-With-Button"], () => (__webpack_require__("./resources/css/Table-With-Search.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","js/Competences-Grid---3-Columns---Hover-Effect-Float-Up","css/Black-Navbar","css/Table-With-Search","css/sidebar-1","css/sidebar","css/Pretty-Registration-Form","css/Ludens-Users---25-After-Register","css/styles","css/custom","css/slidenavbarstyle","css/bootstrap-formhelpers","css/Bootstrap-DataTables","css/Table-With-Search-1","css/Navbar-With-Button"], () => (__webpack_require__("./resources/css/Black-Navbar.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","js/Competences-Grid---3-Columns---Hover-Effect-Float-Up","css/Black-Navbar","css/Table-With-Search","css/sidebar-1","css/sidebar","css/Pretty-Registration-Form","css/Ludens-Users---25-After-Register","css/styles","css/custom","css/slidenavbarstyle","css/bootstrap-formhelpers","css/Bootstrap-DataTables","css/Table-With-Search-1","css/Navbar-With-Button"], () => (__webpack_require__("./resources/css/Competences-Grid---3-Columns---Hover-Effect-Float-Up.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","js/Competences-Grid---3-Columns---Hover-Effect-Float-Up","css/Black-Navbar","css/Table-With-Search","css/sidebar-1","css/sidebar","css/Pretty-Registration-Form","css/Ludens-Users---25-After-Register","css/styles","css/custom","css/slidenavbarstyle","css/bootstrap-formhelpers","css/Bootstrap-DataTables","css/Table-With-Search-1","css/Navbar-With-Button"], () => (__webpack_require__("./resources/css/Navbar-With-Button.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","js/Competences-Grid---3-Columns---Hover-Effect-Float-Up","css/Black-Navbar","css/Table-With-Search","css/sidebar-1","css/sidebar","css/Pretty-Registration-Form","css/Ludens-Users---25-After-Register","css/styles","css/custom","css/slidenavbarstyle","css/bootstrap-formhelpers","css/Bootstrap-DataTables","css/Table-With-Search-1","css/Navbar-With-Button"], () => (__webpack_require__("./resources/css/Table-With-Search-1.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","js/Competences-Grid---3-Columns---Hover-Effect-Float-Up","css/Black-Navbar","css/Table-With-Search","css/sidebar-1","css/sidebar","css/Pretty-Registration-Form","css/Ludens-Users---25-After-Register","css/styles","css/custom","css/slidenavbarstyle","css/bootstrap-formhelpers","css/Bootstrap-DataTables","css/Table-With-Search-1","css/Navbar-With-Button"], () => (__webpack_require__("./resources/css/Bootstrap-DataTables.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","js/Competences-Grid---3-Columns---Hover-Effect-Float-Up","css/Black-Navbar","css/Table-With-Search","css/sidebar-1","css/sidebar","css/Pretty-Registration-Form","css/Ludens-Users---25-After-Register","css/styles","css/custom","css/slidenavbarstyle","css/bootstrap-formhelpers","css/Bootstrap-DataTables","css/Table-With-Search-1","css/Navbar-With-Button"], () => (__webpack_require__("./resources/css/bootstrap-formhelpers.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","js/Competences-Grid---3-Columns---Hover-Effect-Float-Up","css/Black-Navbar","css/Table-With-Search","css/sidebar-1","css/sidebar","css/Pretty-Registration-Form","css/Ludens-Users---25-After-Register","css/styles","css/custom","css/slidenavbarstyle","css/bootstrap-formhelpers","css/Bootstrap-DataTables","css/Table-With-Search-1","css/Navbar-With-Button"], () => (__webpack_require__("./resources/css/slidenavbarstyle.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","js/Competences-Grid---3-Columns---Hover-Effect-Float-Up","css/Black-Navbar","css/Table-With-Search","css/sidebar-1","css/sidebar","css/Pretty-Registration-Form","css/Ludens-Users---25-After-Register","css/styles","css/custom","css/slidenavbarstyle","css/bootstrap-formhelpers","css/Bootstrap-DataTables","css/Table-With-Search-1","css/Navbar-With-Button"], () => (__webpack_require__("./resources/css/custom.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","js/Competences-Grid---3-Columns---Hover-Effect-Float-Up","css/Black-Navbar","css/Table-With-Search","css/sidebar-1","css/sidebar","css/Pretty-Registration-Form","css/Ludens-Users---25-After-Register","css/styles","css/custom","css/slidenavbarstyle","css/bootstrap-formhelpers","css/Bootstrap-DataTables","css/Table-With-Search-1","css/Navbar-With-Button"], () => (__webpack_require__("./resources/css/styles.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","js/Competences-Grid---3-Columns---Hover-Effect-Float-Up","css/Black-Navbar","css/Table-With-Search","css/sidebar-1","css/sidebar","css/Pretty-Registration-Form","css/Ludens-Users---25-After-Register","css/styles","css/custom","css/slidenavbarstyle","css/bootstrap-formhelpers","css/Bootstrap-DataTables","css/Table-With-Search-1","css/Navbar-With-Button"], () => (__webpack_require__("./resources/css/Ludens-Users---25-After-Register.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","js/Competences-Grid---3-Columns---Hover-Effect-Float-Up","css/Black-Navbar","css/Table-With-Search","css/sidebar-1","css/sidebar","css/Pretty-Registration-Form","css/Ludens-Users---25-After-Register","css/styles","css/custom","css/slidenavbarstyle","css/bootstrap-formhelpers","css/Bootstrap-DataTables","css/Table-With-Search-1","css/Navbar-With-Button"], () => (__webpack_require__("./resources/css/Pretty-Registration-Form.css")))
+/******/ 	__webpack_require__.O(undefined, ["css/app","js/Competences-Grid---3-Columns---Hover-Effect-Float-Up","css/Black-Navbar","css/Table-With-Search","css/sidebar-1","css/sidebar","css/Pretty-Registration-Form","css/Ludens-Users---25-After-Register","css/styles","css/custom","css/slidenavbarstyle","css/bootstrap-formhelpers","css/Bootstrap-DataTables","css/Table-With-Search-1","css/Navbar-With-Button"], () => (__webpack_require__("./resources/css/sidebar.css")))
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["css/app","js/Competences-Grid---3-Columns---Hover-Effect-Float-Up","css/Black-Navbar","css/Table-With-Search","css/sidebar-1","css/sidebar","css/Pretty-Registration-Form","css/Ludens-Users---25-After-Register","css/styles","css/custom","css/slidenavbarstyle","css/bootstrap-formhelpers","css/Bootstrap-DataTables","css/Table-With-Search-1","css/Navbar-With-Button"], () => (__webpack_require__("./resources/css/sidebar-1.css")))
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

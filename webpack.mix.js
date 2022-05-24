@@ -24,6 +24,13 @@ mix.postCss('resources/css/Competences-Grid---3-Columns---Hover-Effect-Float-Up.
 mix.postCss('resources/css/Navbar-With-Button.css', 'public/css');
 mix.postCss('resources/css/Table-With-Search-1.css', 'public/css');
 mix.js('resources/js/Bootstrap-DataTables.js', 'public/js').postCss('resources/css/Bootstrap-DataTables.css', 'public/css')
+mix.js('resources/js/bootstrap-formhelpers.js', 'public/js').postCss('resources/css/bootstrap-formhelpers.css', 'public/css')
+
 mix.copyDirectory('resources/fonts', 'public/fonts');
 mix.postCss('resources/css/slidenavbarstyle.css', 'public/css');
 mix.postCss('resources/css/custom.css', 'public/css');
+mix.postCss('resources/css/styles.css', 'public/css');
+mix.postCss('resources/css/Ludens-Users---25-After-Register.css', 'public/css');
+mix.postCss('resources/css/Pretty-Registration-Form.css', 'public/css');
+mix.postCss('resources/css/sidebar.css', 'public/css');
+mix.postCss('resources/css/sidebar-1.css', 'public/css');

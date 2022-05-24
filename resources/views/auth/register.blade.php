@@ -4,8 +4,8 @@
     <div class="container slide">
         <div class="row justify-content-center">
             <div class="col-md-8">
-                <div class="card">
-                    <div class="card-header">{{ __('Register') }}</div>
+                <div class="card formCard">
+                    <div class="card-header cardHeader ">{{ __('Register') }}</div>
                     @if ($errors->any())
                         <div class="alert alert-danger">
                             <ul>
@@ -100,12 +100,6 @@
                                     <button type="submit" class="btn btn-primary">
                                         {{ __('Register') }}
                                     </button>
-                                </div>
-                                <div class="col-md-6 offset-md-4">
-                                    <br>
-                                    <a href="login">
-                                        Already Registered
-                                    </a>
                                 </div>
                             </div>
                         </form>

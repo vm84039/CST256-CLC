@@ -18,6 +18,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('auth.register');
 });
+Route::get('/home', function () {
+    return view('home');
+});
+Route::get('/allUsers', function () {
+    return view('role-admin.allUsers');
+});
+Route::get('/editUser', function () {
+    return view('role-admin.editUser');
+});
+
 Route::get('/welcome', function () {
     return view('welcome');
 });
@@ -27,9 +37,15 @@ Route::get('/login', function() {
 Route::get('/register', function () {
         return view('auth.register');
 });
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::post('/login', 'App\Http\Controllers\Auth\LoginController@authenticate');
 Route::post('/register', 'App\Http\Controllers\Auth\RegisterController@register');
+Route::post('/editUser', 'App\Http\Controllers\ProfileController@editUser');
+Route::post('/suspend', 'App\Http\Controllers\ProfileController@suspend');
+Route::post('/activate', 'App\Http\Controllers\ProfileController@activate');
+Route::post('/delete', 'App\Http\Controllers\ProfileController@delete');
+Route::post('/memberUpdate', 'App\Http\Controllers\ProfileController@memberUpdate');
+Route::post('/adminUpdate', 'App\Http\Controllers\ProfileController@adminUpdate');
 Route::get('/logout', 'App\Http\Controllers\Auth\LoginController@logout');
+
 
 

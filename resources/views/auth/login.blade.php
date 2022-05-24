@@ -1,18 +1,40 @@
+<?php
+use App\Services\Data\SecurityDao;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Redirect;
+
+$DAO = new SecurityDao();
+if (Auth::check()) {
+    $user = $DAO->getUser(AUTH::id());
+    Redirect::to('home')->send();
+
+}
+?>
+
 @extends('layouts.app')
 @section('title', 'Login')
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Login') }}</div>
+            <div class="card formCard">
+                <div class="card-header cardHeader">{{ __('Login') }}</div>
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div><br />
+                @endif
 
                 <div class="card-body">
                     <form method="POST" action="login">
                         @csrf
 
                         <div class="row mb-3">
-                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('username') }}</label>
+                            <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Username') }}</label>
 
                             <div class="col-md-6">
                                 <input id="username" type="text" class="form-control @error('username') is-invalid @enderror" name="username" value="{{ old('username') }}" required autocomplete="username" autofocus>
