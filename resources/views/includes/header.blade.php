@@ -1,11 +1,11 @@
 <?php
 use Illuminate\Support\Facades\Auth;
-use App\Services\Data\SecurityDao;
+use App\Services\Data\UserDao;
 
 ?>
 @if (Auth::check()) <?php
-    $DAO = new SecurityDao();
-    $user = $DAO->getUser(Auth::ID())
+    $UserDao = new UserDao();
+    $user = $UserDao->getUser(Auth::ID())
 ?>@endif
 
 <div id="header">

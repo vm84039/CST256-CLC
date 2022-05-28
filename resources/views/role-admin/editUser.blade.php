@@ -1,18 +1,19 @@
 <?php
 use Illuminate\Support\Facades\Auth;
-use App\Services\Data\SecurityDao;
+use App\Services\Data\UserDao;
+use App\Services\Data\ProfileDao;
 use Illuminate\Support\Facades\Redirect;
 
 if (!Auth::check()) { Redirect::to('home')->send();}
-$AdminDAO = new SecurityDao();
-$admin = $AdminDAO->getUser(Auth::ID());
+$UserDAO = new UserDao();
+$admin = $UserDAO->getUser(Auth::ID());
 if ($admin->getRoleId() != 2) {
     Auth::logout();
     Redirect::to('home')->send();
 }
-$DAO = new SecurityDao();
-$user = $DAO->getUser($id);
-$profile = $DAO->getProfile($id);
+$ProfileDAO = new ProfileDao();
+$user = $UserDAO->getUser($id);
+$profile = $ProfileDAO->getProfile($id);
 ?>
 @extends('layouts.app')
 @section('title', 'Edit User')

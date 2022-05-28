@@ -1,9 +1,9 @@
 <?php
-use App\Services\Data\SecurityDao;
+use App\Services\Data\EportfolioDao;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
 
-$DAO = new SecurityDao();
+$DAO = new EportfolioDao();
 if (Auth::check()) {
     $user = $DAO->getUser(AUTH::id());
     Redirect::to('home')->send();

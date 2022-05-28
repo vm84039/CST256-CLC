@@ -1,12 +1,14 @@
 <?php
 use Illuminate\Support\Facades\Auth;
-use App\Services\Data\SecurityDao;
+use App\Services\Data\UserDao;
+use App\Services\Data\ProfileDao;
 use Illuminate\Support\Facades\Redirect;
 
 if (!Auth::check()) { Redirect::to('home')->send();}
-$DAO = new SecurityDao();
-$user = $DAO->getUser(Auth::ID());
-$profile = $DAO->getProfile(Auth::ID());
+$UserDao = new UserDao();
+$ProfileDao = new ProfileDao();
+$user = $UserDao->getUser(Auth::ID());
+$profile = $ProfileDao->getProfile(Auth::ID());
 ?>
 @extends('layouts.app')
 @section('title', 'Dashboard')

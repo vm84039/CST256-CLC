@@ -1,11 +1,11 @@
 <?php
 use Illuminate\Support\Facades\Auth;
-use App\Services\Data\SecurityDao;
+use App\Services\Data\UserDao;
 use Illuminate\Support\Facades\Redirect;
 
 
 if (!Auth::check()) { Redirect::to('home')->send();}
-$DAO = new SecurityDao();
+$DAO = new UserDao();
 $user = $DAO->getUser(Auth::ID());
 if ($user->getRoleId() != 2) {
     Auth::logout();
@@ -20,7 +20,7 @@ if ($user->getRoleId() != 2) {
         <div class="table-responsive card profile " >
             <div class="" data-bs-toggle="collapse">
                 <div class="cardHeader">
-                    <h1>All Users</h1>
+                    <h1 style="margin:20px" >All Users</h1>
                     <p></p>
                 </div>
             </div>

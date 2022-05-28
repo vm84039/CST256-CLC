@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use App\Models\User;
-use App\Services\Data\SecurityDao;
+use App\Services\Data\EportfolioDao;
 use Illuminate\Foundation\Auth\RegistersUsers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
@@ -87,7 +87,7 @@ class RegisterController extends Controller
     protected function create(array $data)
     {
 
-        $DAO = new SecurityDao();
+        $DAO = new EportfolioDao();
         return $DAO->register($data);
     }
 }

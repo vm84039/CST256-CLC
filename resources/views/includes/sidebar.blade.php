@@ -1,9 +1,9 @@
 <?php
-use App\Services\Data\SecurityDao;
+use App\Services\Data\UserDao;
 use Illuminate\Support\Facades\Auth;
-    $DAO = new SecurityDao();
+    $UserDao = new UserDao();
     if (Auth::check()) {
-        $user = $DAO->getUser(AUTH::id());
+        $user = $UserDao->getUser(AUTH::id());
     }
 ?>
 
@@ -19,33 +19,18 @@ use Illuminate\Support\Facades\Auth;
 
                 <ul class="list-unstyled components">
                     <li class="active">
-                        <a href="home" data-toggle="collapse" aria-expanded="false">
+                        <a href="home">
                             <i class="glyphicon glyphicon-home"></i>
                             Profile
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="eportfolio">
                             <i class="glyphicon glyphicon-briefcase"></i>
-                            Coming Soon
-                        </a>
-                        <a href="#" data-toggle="collapse" aria-expanded="false">
-                            <i class="glyphicon glyphicon-duplicate"></i>
-                            Coming Soon
+                            E-Portfolio
                         </a>
                     </li>
-                    <li>
-                        <a href="#">
-                            <i class="glyphicon glyphicon-link"></i>
-                            Coming Soon
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="glyphicon glyphicon-paperclip"></i>
-                            Coming Soon
-                        </a>
-                    </li>
+
                 </ul>
             </nav>
         </div>
@@ -71,15 +56,9 @@ use Illuminate\Support\Facades\Auth;
                             <i class="glyphicon glyphicon-briefcase"></i>
                             Role Administration
                         </a>
-                        <a href="suspend">
+                        <a href="jobListings">
                             <i class="glyphicon glyphicon-duplicate"></i>
-                            Suspend Account
-                        </a>
-                    </li>
-                    <li>
-                        <a href="delete">
-                            <i class="glyphicon glyphicon-link"></i>
-                            Delete Account
+                            Job Listings
                         </a>
                     </li>
                 </ul>

@@ -1,3 +1,8 @@
+<?php
+use Illuminate\Support\Facades\Auth;
+
+if (Auth::check()) { Redirect::to('home')->send();}
+?>
 @extends('layouts.app')
 @section('title', 'Register')
 @section('content')
