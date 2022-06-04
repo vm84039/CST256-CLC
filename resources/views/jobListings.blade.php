@@ -6,8 +6,7 @@ use Illuminate\Support\Facades\Redirect;
 use App\Models\JobModel;
 use App\Services\Methods\HelperMethods;
 
-
-//if (!Auth::check()) { Redirect::to('home')->send();}
+if (!Auth::check()) { Redirect::to('home')->send();}
 $DAO = new UserDao();
 $JobsDao = new JobsDao();
 $user = $DAO->getUser(Auth::ID());

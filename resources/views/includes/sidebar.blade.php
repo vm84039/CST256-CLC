@@ -30,6 +30,12 @@ use Illuminate\Support\Facades\Auth;
                             E-Portfolio
                         </a>
                     </li>
+                    <li>
+                        <a href="affinity">
+                            <i class="glyphicon glyphicon-duplicate"></i>
+                            Affinity Groups
+                        </a>
+                    </li>
 
                 </ul>
             </nav>
@@ -56,9 +62,17 @@ use Illuminate\Support\Facades\Auth;
                             <i class="glyphicon glyphicon-briefcase"></i>
                             Role Administration
                         </a>
+                    </li>
+                    <li>
                         <a href="jobListings">
                             <i class="glyphicon glyphicon-duplicate"></i>
                             Job Listings
+                        </a>
+                    </li>
+                    <li>
+                        <a href="affinity">
+                            <i class="glyphicon glyphicon-duplicate"></i>
+                            Affinity Groups
                         </a>
                     </li>
                 </ul>

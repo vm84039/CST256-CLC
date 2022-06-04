@@ -131,6 +131,33 @@ img{
 .job-list td{
     height: 100px;
 }
+.affinity{
+    width:80%;
+    margin: 50px;
+}
+.photo-button {
+    width: 120px;
+    height: 50px;
+    font-size: medium;
+    line-height: 45px;
+    text-align: center;
+
+}
+.photo-header {
+    text-align: center;
+    Font-family: 'Bree Serif';
+    font-size: 20px;
+    padding-bottom: 25px;
+    text-transform: uppercase;
+    border-radius: 40px;
+}
+.photo-desc{
+
+    Font-family: 'Bree Serif';
+    text-align: justify;
+    height: 300px;
+}
+
 
 
 

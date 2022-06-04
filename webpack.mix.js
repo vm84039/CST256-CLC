@@ -34,3 +34,4 @@ mix.postCss('resources/css/Ludens-Users---25-After-Register.css', 'public/css');
 mix.postCss('resources/css/Pretty-Registration-Form.css', 'public/css');
 mix.postCss('resources/css/sidebar.css', 'public/css');
 mix.postCss('resources/css/sidebar-1.css', 'public/css');
+mix.postCss('resources/css/dh-card-image-left-dark.css', 'public/css');

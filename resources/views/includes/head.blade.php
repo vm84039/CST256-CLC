@@ -8,6 +8,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
 <link rel="stylesheet" href="{{ asset('css/app.css') }}">
 <link rel="stylesheet" href="{{ asset('css/custom.css') }}">
+<link rel="stylesheet" href="{{ asset('css/dh-card-image-left-dark.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('css/sidebar.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('css/sidebar-1.css') }}">
 <link rel="stylesheet" type="text/css" href="{{ asset('css/bootstrap-formhelpers.css') }}">
@@ -15,3 +16,4 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:300,400|Roboto:300,400,700">
 <link rel="stylesheet" href="{{ asset('fonts/simple-line-icons.min.css')}}">
+<link href='https://fonts.googleapis.com/css?family=Bree Serif' rel='stylesheet'>

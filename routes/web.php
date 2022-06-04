@@ -27,6 +27,9 @@ Route::get('/allUsers', function () {
 Route::get('/addJobListing', function () {
     return view('role-admin.addJobListing', ['route'=>"add", 'textedit' => "1"]);
 });
+Route::get('/addAffinityGroup', function () {
+    return view('role-admin.addAffinityGroup', ['route'=>"add", 'textedit' => "1"]);
+});
 Route::get('/editJobListing', function () {
     return view('role-admin.addJobListing');
 });
@@ -52,6 +55,9 @@ Route::get('/addEducation', function () {
 Route::get('/jobListings', function () {
     return view('jobListings');
 });
+Route::get('/affinity', function () {
+    return view('affinity');
+});
 
 Route::post('/login', 'App\Http\Controllers\Auth\LoginController@authenticate');
 Route::post('/register', 'App\Http\Controllers\Auth\RegisterController@register');
@@ -72,6 +78,15 @@ Route::post('/addJobListing', 'App\Http\Controllers\JobListingController@addJobL
 Route::post('/editListing', 'App\Http\Controllers\JobListingController@editListing');
 Route::post('/editDescription', 'App\Http\Controllers\JobListingController@editDescription');
 Route::post('/deleteListing', 'App\Http\Controllers\JobListingController@deleteListing');
+Route::post('/joinAffinity', 'App\Http\Controllers\AffinityController@joinAffinity');
+Route::post('/removeAffinity', 'App\Http\Controllers\AffinityController@removeAffinity');
+Route::post('/memberList', 'App\Http\Controllers\AffinityController@memberList');
+Route::post('/addAffinityGroup', 'App\Http\Controllers\AffinityController@addAffinityGroup');
+Route::post('/editAffinityGroup', 'App\Http\Controllers\AffinityController@editAffinityGroup');
+Route::post('/saveAffinityGroup', 'App\Http\Controllers\AffinityController@saveAffinityGroup');
+Route::post('/cancelEditAffinity', 'App\Http\Controllers\AffinityController@cancelEditAffinity');
+Route::post('/deleteAffinityGroup', 'App\Http\Controllers\AffinityController@deleteAffinityGroup');
+
 
 
 

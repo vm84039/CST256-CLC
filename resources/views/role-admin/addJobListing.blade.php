@@ -39,7 +39,7 @@ if ($admin->getRoleId() != 2) {
             <form method="POST" action="addJobListing">
                 @csrf
                 <input type="hidden"  name="route" value="{{$route}}">
-                <input type="hidden"  name="jobId" value="{{$job->getJobID()}}">
+                <input type="hidden"  name="jobId" value="{{$id}}">
                 <div class="row" style="margin-bottom: 25px;text-align: left;">
                     <div class="row">
                         <div class="col-md-6">

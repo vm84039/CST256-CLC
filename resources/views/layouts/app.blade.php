@@ -8,20 +8,19 @@
     </head>
     <body>
     <div id="wrapper">
-        @include('includes.header');
+        @include('includes.header')
         <div id="content">
             @include('includes.sidebar')
             @yield('content')
         </div>
-
         <br>
         <div class="push"></div>
     </div>
     <div id="footer">
         <div id="footer-content ">
             @include('includes.footer')
-        </div>>
+        </div>
     </div>
-        @include('includes.scripts');
+        @include('includes.scripts')
     </body>
 </html>

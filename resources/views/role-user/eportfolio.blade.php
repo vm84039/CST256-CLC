@@ -2,7 +2,7 @@
 use Illuminate\Support\Facades\Auth;
 use App\Services\Data\UserDao;
 use App\Services\Data\ProfileDao;
-use App\Services\Data\EportfolioDao;
+use App\Services\Data\AffinityDao;
 use Illuminate\Support\Facades\Redirect;
 use App\Services\Methods\HelperMethods;
 
@@ -11,7 +11,7 @@ $UserDao = new UserDao();
 $ProfileDao = new ProfileDao();
 $user = $UserDao->getUser(Auth::ID());
 $profile = $ProfileDao->getProfile(Auth::ID());
-$portfolioDao = new EportfolioDao();
+$portfolioDao = new AffinityDao();
 $jobs= $portfolioDao->getHistory(Auth::ID());
 $userSkills = $portfolioDao->getUserSkills(Auth::ID());
 $allSkills = $portfolioDao->getAllSkills();

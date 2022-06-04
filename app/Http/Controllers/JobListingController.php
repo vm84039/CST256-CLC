@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Services\Data\EportfolioDao;
+use App\Services\Data\AffinityDao;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Validator;
