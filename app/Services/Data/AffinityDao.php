@@ -24,7 +24,7 @@ class AffinityDao
     {
         DB::table('affinity_reference')
             ->where('id', $model->getId())
-            ->insert([
+            ->update([
             'name' => $model->getName(),
             'description' => $model->getDescription(),
         ]);

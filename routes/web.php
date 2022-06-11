@@ -49,6 +49,9 @@ Route::get('/eportfolio', function () {
 Route::get('/addJob', function () {
     return view('role-user.addJob');
 });
+Route::get('/jobApplication', function () {
+    return view('role-user.jobApplication');
+});
 Route::get('/addEducation', function () {
     return view('role-user.addEducation');
 });
@@ -57,6 +60,9 @@ Route::get('/jobListings', function () {
 });
 Route::get('/affinity', function () {
     return view('affinity');
+});
+Route::get('/viewJobDetails', function () {
+    return view('viewJobDetails');
 });
 
 Route::post('/login', 'App\Http\Controllers\Auth\LoginController@authenticate');
@@ -76,6 +82,9 @@ Route::post('/deleteEducation', 'App\Http\Controllers\EportfolioController@delet
 Route::post('/deleteJob', 'App\Http\Controllers\EportfolioController@deleteJob');
 Route::post('/addJobListing', 'App\Http\Controllers\JobListingController@addJobListing');
 Route::post('/editListing', 'App\Http\Controllers\JobListingController@editListing');
+Route::post('/jobDetails', 'App\Http\Controllers\JobListingController@jobDetails');
+Route::post('/jobApp', 'App\Http\Controllers\JobListingController@jobApp');
+Route::post('/apply', 'App\Http\Controllers\JobListingController@apply');
 Route::post('/editDescription', 'App\Http\Controllers\JobListingController@editDescription');
 Route::post('/deleteListing', 'App\Http\Controllers\JobListingController@deleteListing');
 Route::post('/joinAffinity', 'App\Http\Controllers\AffinityController@joinAffinity');

@@ -36,6 +36,12 @@ use Illuminate\Support\Facades\Auth;
                             Affinity Groups
                         </a>
                     </li>
+                    <li>
+                        <a href="jobListings">
+                            <i class="glyphicon glyphicon-duplicate"></i>
+                            Job Listings
+                        </a>
+                    </li>
 
                 </ul>
             </nav>

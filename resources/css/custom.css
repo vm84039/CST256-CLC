@@ -155,7 +155,52 @@ img{
     Font-family: 'Bree Serif';
     text-align: justify;
 }
+.grid-container{
+    margin: 50px;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 15px;
+    background-color: #6d7fcc;
+    padding: 20px;
+    font-family: "Helvetica Neue Light",  sans-serif;
+}
+.grid-container > div {
+    background-color: whitesmoke;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
 
+}
+.item {
+    color: #24243e;
+
+}
+.item-Title {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+.item-Header {
+    text-transform: capitalize;
+    font-weight: bolder;
+    row-gap: 0;
+}
+.item-JobTitle {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.item-Apply {
+    grid-row-start: 5;
+    grid-row-end: 7;
+    grid-column-start: 3;
+    grid-column-end: 4
+}
+.item-JobDescription {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 8;
+    grid-row-end: 11;
+}
 
 
 

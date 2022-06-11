@@ -37,15 +37,26 @@ class AffinityController extends Controller
 
 // ***********************Admin Methods************************
 
-    public function validateAffinityGroup(Request $request): \Illuminate\Contracts\Validation\Validator
+    public function validateAddAffinityGroup(Request $request): \Illuminate\Contracts\Validation\Validator
     {
         return Validator::make($request->all(), [
             'name' => ['required', 'unique:affinity_reference'],
             'description' => ['required', 'string', 'min:2', 'max:520'],
         ]);
     }
+    public function validateEditAffinityGroup(Request $request): \Illuminate\Contracts\Validation\Validator
+    {
+        return Validator::make($request->all(), [
+            'name' => ['required'],
+            'description' => ['required', 'string', 'min:2', 'max:520'],
+        ]);
+    }
     public function saveAffinityGroup(Request $request){
-        $validator = $this->validateAffinityGroup($request);
+
+        if ($request->id == "-1"){ $validator = $this->validateAddAffinityGroup($request);}
+
+        else {$validator = $this->validateEditAffinityGroup($request);}
+
         if ($validator->fails()) {
             return redirect('addAffinityGroup')
                 ->withErrors($validator)

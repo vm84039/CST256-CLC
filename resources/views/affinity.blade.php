@@ -4,7 +4,7 @@ use App\Services\Data\UserDao;
 use App\Services\Data\AffinityDao;
 use Illuminate\Support\Facades\Redirect;
 
-if (!Auth::check()) { Redirect::to('home')->send();}
+if (!Auth::check()) { Redirect::to('login')->send();}
 $UserDao = new UserDao();
 $AffinityDao = new AffinityDao();
 $user = $UserDao->getUser(Auth::ID());

@@ -35,6 +35,7 @@ if ($admin->getRoleId() != 2) {
         <form method="POST" action="saveAffinityGroup">
             @csrf
             <input type="hidden"  name="id" value="{{$id}}">
+
             <div class="row" style="margin-bottom: 25px;text-align: left;">
                 <div class="row">
                     <div class="col-md-6">

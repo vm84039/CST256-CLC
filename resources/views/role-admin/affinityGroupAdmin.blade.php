@@ -1,5 +1,3 @@
-
-
 @section('content')
     <div id = "main">
         <div class="table-responsive card profile " >

@@ -56,5 +56,26 @@ class JobListingController extends Controller
 
         return view ("jobListings");
     }
+    public function jobDetails(Request $request)
+    {
+        $id = $request->id;
+        $data =['id'=> $id];
+        return view ("role-user.viewJobDetails")->with($data);
+    }
+    public function jobApp(Request $request)
+    {
+        $id = $request->id;
+        $data =['jobId'=> $id];
+        return view ("role-user.jobApplication")->with($data);
+    }
+
+
+    public function apply(Request $request)
+    {
+        $id = $request->id;
+        $data =['jobId'=> $id];
+        return view ("role-user.applied")->with($data);
+    }
+
 
 }
